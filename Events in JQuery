@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="scripts/JQuery.min.js"></script>
+</head>
+<body>
+
+    <h1>Events Demo</h1>
+    <br /><br />
+    <input type="text" id="txt" /> 
+    <br /><br />
+    <label id="lbl"></label>
+    <br /><br />
+    <input type="button" value="Clic Me !!!" id="btn" />
+
+
+
+
+    <script>
+
+        $(function () {
+
+            $('#btn').click(function () {
+                $(this).hide();
+            });
+
+            //$('#btn').click(function () {
+            //    $(this).css('background-color', 'red');
+            //    $(this).css('color', 'white');
+            //});
+
+
+            //$('#btn').mouseenter(function () {
+            //    $(this).css('background-color', 'red');
+            //    $(this).css('color', 'white');
+            //});
+
+            //$('#btn').mouseleave(function () {
+            //    $(this).css('background-color', 'seagreen');
+            //    $(this).css('color', 'white');
+            //});
+
+
+            //it handles both mouseenter and mouseleave events
+
+            $('#btn').hover(function () {
+                $(this).css('background-color', 'red');
+                $(this).css('color', 'white');
+            }, function () {
+                $(this).css('background-color', 'seagreen');
+                $(this).css('color', 'white');
+            });
+
+
+
+        });
+
+    </script>
+</body>
+</html>
+New File at / ·
