@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="scripts/JQuery.min.js"></script>
+</head>
+<body>
+
+    <h1>Events Demo</h1>
+    <br /><br />
+   
+    <input type="button" value="Click Me !!!" id="btn" />
+
+
+
+
+    <script>
+
+        $(function () {
+
+             //// on() function
+            //$('#btn').on('click', function () {
+            //    $(this).hide();
+            //});
+
+            $('#btn').on({
+                click: function () {
+                    $(this).css('background-color', 'lightblue');
+                },
+                mouseenter: function () {
+                    $(this).css('color', 'seagreen');
+                },
+                mouseleave: function () {
+                    $(this).css('color', 'red');
+                },
+                dblclick : function() {
+                    $(this).attr('value', 'You Clicked Me !!!');
+                }
+            })
+
+
+
+        });
