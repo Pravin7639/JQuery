@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="scripts/JQuery.min.js"></script>
+    <style>
+        #div1 {
+            background-color: red;
+            width: 30%;
+            padding: 20px 0 20px 10px;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 10px;
+            display: none;
+        }
+
+        button {
+            width: 50%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Effects Demo</h2>
+
+    <button>Click Me!!!</button> <br /><br />
+    <div id="div1">
+        jQuery is a JavaScript Library. <br />
+
+        jQuery greatly simplifies JavaScript programming. <br />
+
+        jQuery is easy to learn.
+    </div>
+
+    <script>
+        $(function () {
+            $('button').click(function () {
+
