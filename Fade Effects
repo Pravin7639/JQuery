@@ -37,4 +37,22 @@
     <script>
         $(function () {
             $('button').click(function () {
+$('#div1').fadeIn(10000);
+                $('#div1').fadeOut(10000);
+                $('#div1').fadeToggle(1000);
+
+                $('#div1').fadeTo(2000,0.5, function () {
+                    alert('Effect Completed....');
+                });
+});
+
+  });
+
+
+    </script>
+
+
+</body>
+</html>
+
 
