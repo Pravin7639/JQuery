@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://cdn.datatables.net/2.0.0/css/dataTables.dataTables.min.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>DataTables Library Demo</h1>
+
+    <table id="student">
+        <thead>
+            <tr>
+                <th>RollNumber</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>City</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Kiran</td>
+                <td>Female</td>
+                <td>Pune</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Sachin</td>
+                <td>Male</td>
+                <td>Mumbai</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Aarti</td>
+                <td>Female</td>
+                <td>Goa</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Pravin</td>
+                <td>Male</td>
+                <td>Benglore</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>Pawan</td>
+                <td>Male</td>
+                <td>Pune</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <script src="scripts/JQuery.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.0/js/dataTables.min.js"></script>
+
+    <script>
+
+        $(function () {
+            $('#student').DataTable({
+                paging: true,
+                seaching: true,
+                pageLength: 2
+            });
+        });
+
+    </script>
+
+
+</body>
+</html>
